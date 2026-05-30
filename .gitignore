@@ -184,3 +184,7 @@ CVS
 .Trashes
 ehthumbs.db
 Thumbs.db
+
+# Minecraft Forge run directory
+run/
+run-data/
