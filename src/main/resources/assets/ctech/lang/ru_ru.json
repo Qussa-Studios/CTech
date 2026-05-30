@@ -1,0 +1,13 @@
+{
+  "_comment1": "Перевод сообщений для русской локали",
+  "block.ctech.socket": "Сокет",
+  "item.ctech.coil": "Коил",
+  "block.ctech.wire": "Провод",
+
+  "_comment2": "Перевод сообщений для русской локали",
+  "message.ctech.invalid_block": "[CTech] Блок не является сокетом",
+  "message.ctech.already_connected": "[CTech] Сокеты уже соединены",
+  "message.ctech.first_block_destroyed": "[CTech] Первый блок был уничтожен",
+  "message.ctech.pos_saved": "[CTech] Позиция сохранена",
+  "message.ctech.connected": "[CTech] Сокеты соединены"
+}
