@@ -1,0 +1,15 @@
+{
+  "_comment1": "Перевод предметов для английской локали",
+
+  "block.ctech.socket": "Socket",
+  "item.ctech.coil": "Coil",
+  "block.ctech.wire": "Wire",
+
+  "_comment2": "Перевод сообщений для английской локали",
+
+  "message.ctech.invalid_block": "[CTech] Block is not a socket",
+  "message.ctech.already_connected": "[CTech] Socket is already connected",
+  "message.ctech.first_block_destroyed": "[CTech] First block destroyed",
+  "message.ctech.pos_saved": "[CTech] Position saved",
+  "message.ctech.connected": "[CTech] Sockets connected"
+}
