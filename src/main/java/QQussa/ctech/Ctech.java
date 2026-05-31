@@ -1,8 +1,8 @@
 package QQussa.ctech;
 
 import QQussa.ctech.Blocks.BlockRegister;
-import QQussa.ctech.Item.ItemRegistry;
-import QQussa.ctech.Interface.Screen.MenuRegister;
+import QQussa.ctech.CreativeTab.CreativeTabRegister;
+import QQussa.ctech.Item.ItemRegister;
 import com.mojang.logging.LogUtils;
 import net.minecraftforge.api.distmarker.Dist;
 import net.minecraftforge.common.MinecraftForge;
@@ -36,9 +36,11 @@ public class Ctech {
         LOGGER.info("(CTech) Registry Blocks");
         BlockRegister.registry(modEventBus);
         LOGGER.info("(CTech) Registry Items");
-        ItemRegistry.registry(modEventBus);
+        ItemRegister.registry(modEventBus);
         LOGGER.info("(CTech) Registry Screens");
-        MenuRegister.register(modEventBus);
+        LOGGER.info("(CTech) Skip...");
+        LOGGER.info("(CTech) Registry Creative tabs");
+        CreativeTabRegister.registry(modEventBus);
         // Register the commonSetup method for modloading
         modEventBus.addListener(this::commonSetup);
 
