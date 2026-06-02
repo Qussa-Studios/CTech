@@ -17,13 +17,10 @@ public class CreativeTabRegister {
 
     public static final RegistryObject<CreativeModeTab> CTECH_ENERGY = CREATIVE_TABS.register("ctec_energy",()->
             CreativeModeTab.builder()
-                    .icon(()->new ItemStack(ItemRegister.WIRE_ITEM.get()))
+                    .icon(()->new ItemStack(ItemRegister.NET_CONTROLLER_ITEM.get()))
                     .title(Component.translatable("creativetab.ctech.energy"))
                     .displayItems((itemDisplayParameters, output) -> {
-                        output.accept(ItemRegister.WIRE_ITEM.get());
-                        output.accept(ItemRegister.CREATIVE_ACCUMULATOR_ITEM.get());
-                        output.accept(ItemRegister.ENERGY_BLACK_HOLE_ITEM.get());
-                        output.accept(ItemRegister.ROUTER_ITEM.get());
+                        output.accept(ItemRegister.NET_CONTROLLER_ITEM.get());
                     })
                     .build()
     );
