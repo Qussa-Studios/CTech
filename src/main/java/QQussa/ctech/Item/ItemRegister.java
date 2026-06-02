@@ -14,13 +14,8 @@ public class ItemRegister {
 
     public static final DeferredRegister<Item> ITEM = DeferredRegister.create(ForgeRegistries.ITEMS,MODID);
 
-    public static final RegistryObject<BlockItem> WIRE_ITEM = ITEM.register("wire",() -> new BlockItem(BlockRegister.WIRE.get(),new Item.Properties()));
-    public static final RegistryObject<BlockItem> CREATIVE_ACCUMULATOR_ITEM = ITEM.register("creative_accumulator",
-            () -> new BlockItem(BlockRegister.CREATIVE_ACCUMULATOR.get(),new Item.Properties()));
-    public static final RegistryObject<BlockItem> ENERGY_BLACK_HOLE_ITEM = ITEM.register("e_black_hole",
-            () -> new BlockItem(BlockRegister.ENERGY_BLACK_HOLE.get(),new Item.Properties()));
-    public static final RegistryObject<BlockItem> ROUTER_ITEM = ITEM.register("router",
-            () -> new BlockItem(BlockRegister.ROUTER.get(),new Item.Properties()));
+    public static final RegistryObject<BlockItem> NET_CONTROLLER_ITEM = ITEM.register("net_controller",
+            ()->new BlockItem(BlockRegister.NET_CONTROLLER.get(),new Item.Properties()));
 
     public static void registry(IEventBus eventBus) {
         ITEM.register(eventBus);
