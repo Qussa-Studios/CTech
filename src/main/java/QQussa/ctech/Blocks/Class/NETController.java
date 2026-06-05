@@ -8,6 +8,7 @@ import net.minecraft.world.InteractionHand;
 import net.minecraft.world.InteractionResult;
 import net.minecraft.world.entity.player.Player;
 import net.minecraft.world.level.Level;
+import net.minecraft.world.level.LevelReader;
 import net.minecraft.world.level.block.Block;
 import net.minecraft.world.level.block.EntityBlock;
 import net.minecraft.world.level.block.entity.BlockEntity;
@@ -32,11 +33,20 @@ public class NETController extends Block implements EntityBlock {
         }
         if (pLevel.getBlockEntity(pPos) instanceof NETControllerEntity entity) {
             if (pPlayer.isShiftKeyDown()) {
-                pPlayer.sendSystemMessage(Component.literal("ПАДКЛЮЧЕНИЯ!!!! " + entity.getNet()));
-            } else {
                 entity.crateNet(pLevel, GlobalPos.of(pLevel.dimension(),pPos));
+            } else {
+                pPlayer.sendSystemMessage(Component.literal("ПАДКЛЮЧЕНИЯ!!!! " + entity.getNet()));
             }
         }
         return InteractionResult.SUCCESS;
+    }
+
+    @Override
+    public void onNeighborChange(BlockState state, LevelReader level, BlockPos pos, BlockPos neighbor) {
+        super.onNeighborChange(state, level, pos, neighbor);
+        if (level.isClientSide()) {return;}
+        if (level.getBlockEntity(pos) instanceof NETControllerEntity NET) {
+            NET.ping(null);
+        }
     }
 }
