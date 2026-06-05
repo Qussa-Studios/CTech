@@ -72,10 +72,6 @@ buildNumber.properties
 /.idea/workspace.xml
 /.idea/navEditor.xml
 /.idea/remote-run.xml
-.DS_Store
-*.iml
-*.ipr
-*.iws
 .idea/libraries
 .idea/artifacts
 .idea/modules.xml
@@ -87,25 +83,7 @@ buildNumber.properties
 .idea/encodings.xml
 
 # intellij
-.idea/
-*.iml
 *.ipr
-
-# linux
-.DS_Store
-
-# macOS
-.DS_Store
-.AppleDouble
-.LSOverride
-Icon
-.DocumentRevisions-V100
-.fseventsd
-.Spotlight-V100
-.TemporaryItems
-.Trashes
-.VolumeIcon.icns
-.com.apple.timemachine.donotpresent
 
 # misc
 .env
@@ -120,18 +98,6 @@ __pycache__/
 .eggs-info
 .installed.cfg
 *.egg-info
-*.log
-*.pot
-*.pyc
-*.pyo
-*.~*
-.env
-.venv
-.eggs
-.eggs-info
-.installed.cfg
-*.egg-info
-*.log
 *.pot
 *.pyc
 *.pyo
@@ -159,10 +125,6 @@ CVS
 *.tar.gz
 *.rar
 *.tar.bz2
-*.jar
-*.war
-*.ear
-*.class
 *.hprof
 .hprof.index
 .hprof.heapdump
