@@ -1,5 +1,6 @@
 package QQussa.ctech.Electrical;
 
 public enum eType {
-    NET_CONTROLLER
+    NET_CONTROLLER,
+    ROUTER
 }
